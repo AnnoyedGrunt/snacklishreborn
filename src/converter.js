@@ -41,7 +41,7 @@ function convertToken(token) {
 }
 
 function random(array) {
-    return array[Math.floor(Math.random() * array.length)]
+    return array[Math.floor(Math.random()) * array.length]
 }
 
 export default { convert };
