@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="index.css">
+    </head>
+    <body>
+        <div id="Header">
+            <span id="Title" class="snacklish">Snacklish Reborn</span>
+        </div>
+        <div id="Body">
+            <div>
+                <textarea id="Input" class="no-resize"></textarea>
+                <div id="Controls" class="controlbox">
+                    <span id="ConvertButton" class="button label">Convert!</span>
+                    <form id="SnackinessControls" oninput="display.value=parseInt(snackiness.value)">
+                        <div class="label" name="slider">Snackiness: <output for="snackiness" name="display">80</output>%</div>
+                        <input type="range" min="0" max="100" step="20" value="80" class="slider" name="snackiness" id="Snackiness">
+                    </form>
+                </div>
+            </div>
+            <div id="Output" class="snacklishContainer"></div>
+        </div>
+    </body>
+    <script type="module" src="index.js"></script>
+    <script type="module" src="./src/converter.js"></script>
+    <script type="module" src="./src/blacklist.js"></script>
+    <script type="module" src="./src/fixed.js"></script>
+    <script type="module" src="./src/rules.js"></script>
+</html>

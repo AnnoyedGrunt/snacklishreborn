@@ -1,0 +1,138 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+html {
+    font-family: sans-serif;
+    background-color: #2f1306;
+    
+    color: white;
+    margin: 0;
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    height: 100%;
+}
+
+#Header {
+    display: flex;
+    position: sticky;
+    flex-direction: row;
+    justify-content: center;
+    font-size: 64px;
+    margin: 0.5em 0;
+}
+
+#Body {
+    display: flex;
+    flex-direction: column;
+    margin-left: 15%;
+    margin-right: 15%;
+    background-color: #501A00;
+    min-height: 100%;
+    box-shadow: 0 -0 32px -24px black;
+}
+
+#Input {
+    display: block;
+    font-size: 1.5em;
+    width: 100%;
+    height: 15rem;
+    padding: 0.5em;
+}
+
+#SnackinessControls {
+    width: 40%;
+}
+
+#Output {
+    font-size: 32px;
+    padding: 1em;
+}
+
+.snacklish, 
+.snacklishContainer > span, 
+.snacklishContainer > .div {
+    display: inline-block;
+    box-sizing: border-box;
+    font-weight: bold;
+    font-family: 'Oswald', sans-serif;
+    line-height: 1;
+    text-transform: uppercase;
+        
+    border: 0.05em solid #F10012;
+    border-radius: 0.3em 0 0.3em 0;
+    padding-left: 0.1em;
+    padding-right: 0.1em;
+    padding-top: 0;
+    padding-bottom: 0.1em;
+    margin-right: 0.2em;
+    margin-bottom: 0.3em;
+    transform: skewX(-10deg);
+    
+    background-color: white;
+    color: transparent;
+    -webkit-text-stroke: 0.03em #1E3495;
+    text-shadow: 0.04em 0 0 #1E3495;
+}
+
+.button {
+    user-select: none;
+    cursor: pointer;
+    padding: 0.5em 1.5em;
+    background-color: #4a0e00;
+    box-shadow: 0px 8px 10px -4px rgba(0, 0, 0, 0.6);
+    border: 1px solid #c68146;
+}
+
+.button:hover {
+    color: #c68146;
+}
+
+.label {
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    color: white;
+}
+
+.slider {
+    outline: none;
+    -webkit-appearance: none;
+    background-color: #2f1306;
+    height: 1em;
+    width: 100%;
+    border-radius: 99em;
+    border-top: 1px solid black;
+    border-bottom: 1px solid #c68146;
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    cursor: grab;
+    width: 2em;
+    height: 2em;
+    border-radius: 100%;
+    background-color: #4a0e00;
+    box-shadow: 0px 8px 10px -4px rgba(0, 0, 0, 0.6);
+    border: 1px solid #c68146;
+}
+
+.slider::-webkit-slider-thumb:active {
+    cursor: grabbing;
+}
+
+.controlbox {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1em;
+    box-shadow: 0px 8px 10px -4px rgba(0, 0, 0, 0.6);
+    border-bottom: 1px solid #c68146;
+}
+
+.no-resize {
+    resize: none;
+}
