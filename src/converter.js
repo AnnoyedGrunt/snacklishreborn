@@ -33,7 +33,9 @@ function convertToken(token) {
     }
     
     if (viableRules.length > 0) {
+        console.log(viableRules)
         const [pattern, transformation] = random(viableRules)
+        console.log([pattern, transformation])
         return token.replace(pattern, transformation)   
     }
     
@@ -41,7 +43,7 @@ function convertToken(token) {
 }
 
 function random(array) {
-    return array[Math.floor(Math.random()) * array.length]
+    return array[Math.floor(Math.random() * array.length)]
 }
 
 export default { convert };

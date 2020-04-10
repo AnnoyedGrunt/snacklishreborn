@@ -38,7 +38,6 @@ export default new Set([
     "i'll",
     "i'd",
     "you",
-    "you're",
     "you've",
     "you'd",
     "at",

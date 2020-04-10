@@ -26,11 +26,22 @@ body {
     margin: 0.5em 0;
 }
 
+@media (orientation: landscape) {
+    #Body {
+        margin-left: 15%;
+        margin-right: 15%;
+    }
+}
+
+@media (orientation: portrait) {
+    #Body {
+        margin: 0;
+    }
+}
+
 #Body {
     display: flex;
     flex-direction: column;
-    margin-left: 15%;
-    margin-right: 15%;
     background-color: #501A00;
     min-height: 100%;
     box-shadow: 0 -0 32px -24px black;
@@ -40,12 +51,15 @@ body {
     display: block;
     font-size: 1.5em;
     width: 100%;
-    height: 15rem;
+    height: 20rem;
     padding: 0.5em;
 }
 
 #SnackinessControls {
-    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 50%;
 }
 
 #Output {
@@ -55,7 +69,7 @@ body {
 
 .snacklish, 
 .snacklishContainer > span, 
-.snacklishContainer > .div {
+.snacklishContainer > div {
     display: inline-block;
     box-sizing: border-box;
     font-weight: bold;
@@ -69,14 +83,18 @@ body {
     padding-right: 0.1em;
     padding-top: 0;
     padding-bottom: 0.1em;
-    margin-right: 0.2em;
-    margin-bottom: 0.3em;
     transform: skewX(-10deg);
     
     background-color: white;
     color: transparent;
     -webkit-text-stroke: 0.03em #1E3495;
     text-shadow: 0.04em 0 0 #1E3495;
+}
+
+.snacklishContainer > span,
+.snacklishcontainer > div {
+    margin-right: 0.2em;
+    margin-bottom: 0.3em;
 }
 
 .button {
@@ -94,6 +112,7 @@ body {
 
 .label {
     font-family: 'Oswald', sans-serif;
+    font-size: 2em;
     text-transform: uppercase;
     color: white;
 }
